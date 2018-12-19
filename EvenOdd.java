@@ -1,3 +1,5 @@
+package problems;
+
 import java.util.Scanner;
 
 public class EvenOdd {
@@ -6,13 +8,13 @@ public class EvenOdd {
 		
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		
-		if(n%2==0)
+		if(n<0)
+			System.out.println("Invalid");
+		else if(n%2==0)
 			System.out.println("Even");
 		else if(n%2!=0)
 			System.out.println("Odd");
-		else if(n<0)
-			System.out.println("Invalid");
+		
 		sc.close();
 	}
 
