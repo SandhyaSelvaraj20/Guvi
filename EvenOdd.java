@@ -11,7 +11,7 @@ public class EvenOdd {
 			System.out.println("Even");
 		else if(n%2!=0)
 			System.out.println("Odd");
-		else
+		else if(n<0)
 			System.out.println("Invalid");
 		sc.close();
 	}
