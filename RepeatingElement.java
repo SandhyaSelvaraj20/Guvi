@@ -13,20 +13,24 @@ public class RepeatingElement {
 				arr[i]=sc.nextInt();
 			}
 			Arrays.sort(arr);
+			
 			for(int i=1;i<n;i++) {
 				if(arr[i-1]==arr[i])
 					al.add(arr[i]);
 			}
 			int res=0;
+			if(al.size()==0) System.out.println("unique");
+			else {
 			for(int i=1;i<al.size();i++) {
 				if(al.get(i-1)==al.get(i))
 					al.remove(i);
 			}
-			for(int i=0;i<al.size();i++) {
-				System.out.print(al.get(i)+" ");
+				for(int i=0;i<al.size();i++) {
+					System.out.print(al.get(i)+" ");
+				}
 			}
-			
 			sc.close();
 	}
 
 }
+
